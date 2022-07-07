@@ -95,7 +95,7 @@ window.addEventListener('DOMContentLoaded', () => {
   let timerInterval;
   const timerCountdown = () => {
     let min = 0;
-    let sec = 11;
+    let sec = 60;
     timerInterval =
     setInterval(() => {
       const timeRemaining = document.querySelector("#time");
