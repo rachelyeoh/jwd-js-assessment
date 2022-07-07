@@ -15,6 +15,11 @@
       crossorigin="anonymous"
     />
     <title>Quiz</title>
+    <style>
+      body {
+        background: url("./background.jpg");
+      }
+    </style>
   </head>
   <body>
     <div class="container m-5" id="start">
@@ -22,24 +27,24 @@
         <div class="card-body">
           <h5 class="card-title">Test your knowledge</h5>
           <p class="card-text">Some quick description about the quiz .</p>
-          <a class="btn btn-primary">Start</a>
+          <a class="btn btn-info">Start</a>
         </div>
       </div>
     </div>
 
     <!-- (B) QUIZ CONTAINER -->
     <div class="container" id="quizBlock" style="display: none">
-      <div class="mb-5">
-        <h2>Test your knowledge</h2>
-        - Time remaining <span id="time">01:00</span>
+      <div class="mb-3">
+        <h2 class="text-center mt-4">Test your knowledge</h2>
+        <p class="text-center">- Time remaining <span id="time">01:00</span></p>
       </div>
       <div id="quizWrap"></div>
 
-      <div>
-        <button type="button" class="btn btn-primary" id="btnSubmit">
+      <div class="mb-5">
+        <button type="button" class="btn btn-info" id="btnSubmit">
           Submit Quiz
         </button>
-        <button type="button" class="btn btn-primary" id="btnReset">
+        <button type="button" class="btn btn-secondary" id="btnReset">
           Reset Quiz
         </button>
         <span id="score"></span>
