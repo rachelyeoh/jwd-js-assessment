@@ -152,8 +152,7 @@ window.addEventListener('DOMContentLoaded', () => {
   /****** 1) Calculate the score as the total of the number of correct answers ******/
   const displayScore = () => {
     let totalScore = document.querySelector("#score");
-    totalScore.innerHTML = `<h2 class="text-dark mt-2 mb-5">Your total score is (correct answer/total questions): <span class="text-primary">${score}/${quizArray.length}</span></h2>`
-    // quizWrap.insertAdjacentHTML("beforebegin", totalScore)
+    totalScore.innerHTML = `<h2 class="text-dark mt-2 mb-5">Your total score is (correct answer/total questions): <span class="text-info">${score}/${quizArray.length}</span></h2>`
   };
   
 
